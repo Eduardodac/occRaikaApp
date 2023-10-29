@@ -16,7 +16,7 @@ module.exports = {
       extend: {
         colors: {
           gray: {
-            menus: "#F0F0C9"
+            menus: "#F2DCEB"
             // menus: "#F0F0C9",
             // menus: '#F2F2F2',
           },
