@@ -30,11 +30,11 @@ body {
 
 .active {
   @apply font-semibold;
-  @apply text-paletaIpn-guinda 
+  @apply text-paleta-iconosMenu 
 }
 
 *, ::before, ::after {
   border-style: solid;
-  border-color: #6C1D45;
+  border-color: #e9791a;
 }
 

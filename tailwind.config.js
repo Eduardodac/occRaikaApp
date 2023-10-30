@@ -16,11 +16,12 @@ module.exports = {
       extend: {
         colors: {
           gray: {
-            menus: "#F2DCEB"
+            menus: "#355c7d"
             // menus: "#F0F0C9",
             // menus: '#F2F2F2',
           },
-          paletaIpn: {
+          paleta: {
+            iconosMenu:"#f8b195",
             guinda: "#6C1D45",
             rojo: "#8C1858",
             morado: "#8C657B",
