@@ -15,6 +15,7 @@ module.exports = {
       },
       extend: {
         colors: {
+          progressBarInactive: "#00D27F",
           gray: {
             menus: "#355c7d"
             // menus: "#F0F0C9",
@@ -109,6 +110,9 @@ module.exports = {
           "9/12": "75%",
           "10/12": "83.333333%",
           "11/12": "91.666667%",
+          "1/20" : "5.0%",
+          "1/40" : "2.5.0%",
+          "3/10" : "30.00%",
         },
         borderRadius: {
           none: "0px",
