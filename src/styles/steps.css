@@ -1,0 +1,100 @@
+.stepEmp {
+    position: relative;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.stepEmp--dosElementos {
+    width: 40%;
+}
+
+.stepEmp--tresElementos {
+    width: 60%;
+}
+
+.stepEmp--cuatroElementos {
+    width: 70%;
+}
+
+.stepEmp__step {
+    z-index: 1;
+    width: 15%;
+}
+
+.stepEmp__contenedorIcono {
+    cursor: pointer;
+    display: table;
+    text-align: center;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #D7E2EE
+}
+
+.stepEmp__icono {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.stepEmp__text {
+    color: #D7E2EE;
+    letter-spacing: 0em;
+    text-align: center;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+    margin: 5px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.stepEmp__progressbar {
+    position: absolute;
+    z-index: 0;
+    top: 30%;
+    margin: 0% 5%;
+    height: 1px;
+}
+
+.stepEmp__indicador {
+    background: #00D27F;
+    position: absolute;
+    z-index: 0;
+    transition: all 500ms ease;
+    height: 100%;
+    width: 0%;
+}
+
+.stepEmp--inactive {
+    color: #D7E2EE;
+    background-color: #FFF;
+}
+
+.stepEmp--textInactive {
+    color: #D7E2EE;
+}
+
+.stepEmp--active {
+    color: #FFFFFF;
+    background-color: #3B82F6;
+}
+
+.stepEmp--textActive {
+    color: #3B82F6;
+}
+
+.stepEmp--previous {
+    color: #FFFFFF;
+    background-color: #00D27F;
+}
+
+.stepEmp--textPrevious {
+    color: #00D27F;
+}

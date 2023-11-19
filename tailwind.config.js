@@ -16,6 +16,7 @@ module.exports = {
       extend: {
         colors: {
           progressBarInactive: "#00D27F",
+          borderIcon: "#D7E2EE",
           gray: {
             menus: "#355c7d"
             // menus: "#F0F0C9",
