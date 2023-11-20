@@ -1,19 +1,36 @@
 import { SlideMenu } from 'primereact/slidemenu';
-import { leftMenuItems } from './leftmenuItem';
-import raikaLogo from '../assets/raikaImage.jpg'
+import { menuItems } from './menuItems';
+import { useContext } from 'react';
+import { leftBarStore } from '../store/leftBarStatus';
+
 
 export const LeftMenu = () => {
     const weigth = "250px"
 
+    const { leftMenuItemsIcons, leftMenuItems } = menuItems();
+
+    const leftBarStatus = leftBarStore((state) => state.status)
+    const setLeftBarStatus = leftBarStore((state) => state.changeStatus)
+
+    const toolBarSetLocalStorage = (e: any) => {
+        setLeftBarStatus(!leftBarStatus);
+        leftBarStatus ? localStorage.setItem("topBarStatus", "true") : localStorage.setItem("topBarStatus", "false");
+    }
+
+
     return (
-        <div className={`flex flex-col ${weigth} bg-gray-menus `}>
-            <div className="flex justify-center items-center h-16 pt-1">
-                <img src="https://i.ibb.co/kgRT6Vw/logo-raika.png" width="100px"/> 
-            </div>
-            
-            <div className=" h-full">
-                <SlideMenu model={leftMenuItems} className='bg-gray-menus w-44 border-0 rounded-none text-white' viewportHeight={585} easing="ease-in" menuWidth={200}></SlideMenu>
-            </div>
+        <div className={`${leftBarStatus ? 'w-48' : 'w-20'} h-full relative flex flex-col items-center transition-all bg-gray-menus`}>
+
+            <button className="flex justify-center items-center h-16 pt-1 mb-4" onClick={toolBarSetLocalStorage}>
+                <img src="https://i.ibb.co/kgRT6Vw/logo-raika.png" width={`${leftBarStatus ? '100px' : '60px'}`} />
+            </button>
+
+            {
+                leftBarStatus 
+                ? (<SlideMenu model={leftMenuItems} className='bg-gray-menus w-44 border-0 rounded-none text-white' viewportHeight={585} easing="ease-in"></SlideMenu>)
+                : (<SlideMenu model={leftMenuItemsIcons} className='bg-gray-menus w-20 border-0 rounded-none text-white' viewportHeight={585} easing="ease-in"></SlideMenu>)
+            }
+
         </div>
     )
 }

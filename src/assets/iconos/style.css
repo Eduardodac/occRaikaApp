@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?3kq82x');
+  src:  url('fonts/icomoon.eot?3kq82x#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3kq82x') format('truetype'),
+    url('fonts/icomoon.woff?3kq82x') format('woff'),
+    url('fonts/icomoon.svg?3kq82x#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ico-asistencia-bold:before {
+  content: "\e900";
+}
+.icon-ico-asistencia:before {
+  content: "\e901";
+}
+.icon-ico-basicos-bold:before {
+  content: "\e902";
+}
+.icon-ico-basicos:before {
+  content: "\e903";
+}
+.icon-ico-bullet:before {
+  content: "\e904";
+}
+.icon-ico-buscar:before {
+  content: "\e905";
+}
+.icon-ico-busq-av:before {
+  content: "\e906";
+}
+.icon-ico-busqueda:before {
+  content: "\e907";
+}
+.icon-ico-calendar:before {
+  content: "\e908";
+}
+.icon-ico-candado:before {
+  content: "\e909";
+}
+.icon-ico-check:before {
+  content: "\e90a";
+}
+.icon-ico-chevron:before {
+  content: "\e90b";
+}
+.icon-ico-contractuales-bold:before {
+  content: "\e90c";
+}
+.icon-ico-contractuales:before {
+  content: "\e90d";
+}
+.icon-ico-desacargar:before {
+  content: "\e90e";
+}
+.icon-ico-documentos-bold:before {
+  content: "\e90f";
+}
+.icon-ico-documentos:before {
+  content: "\e910";
+}
+.icon-ico-editar:before {
+  content: "\e911";
+}
+.icon-ico-eliminar:before {
+  content: "\e912";
+}
+.icon-ico-empleados-bold:before {
+  content: "\e913";
+}
+.icon-ico-empleados:before {
+  content: "\e914";
+}
+.icon-ico-eye-off:before {
+  content: "\e915";
+}
+.icon-ico-eye:before {
+  content: "\e916";
+}
+.icon-ico-filtro:before {
+  content: "\e917";
+}
+.icon-ico-hub:before {
+  content: "\e918";
+}
+.icon-ico-incapacidades-bold:before {
+  content: "\e919";
+}
+.icon-ico-incapacidades:before {
+  content: "\e91a";
+}
+.icon-ico-lupa:before {
+  content: "\e91b";
+}
+.icon-ico-medicos-bold:before {
+  content: "\e91c";
+}
+.icon-ico-medicos:before {
+  content: "\e91d";
+}
+.icon-ico-menu:before {
+  content: "\e91e";
+}
+.icon-ico-nomina-bold:before {
+  content: "\e91f";
+}
+.icon-ico-nomina:before {
+  content: "\e920";
+}
+.icon-ico-operadores-bold:before {
+  content: "\e921";
+}
+.icon-ico-operadores:before {
+  content: "\e922";
+}
+.icon-ico-organigrama-bold:before {
+  content: "\e923";
+}
+.icon-ico-organigrama:before {
+  content: "\e924";
+}
+.icon-ico-personales-bold:before {
+  content: "\e925";
+}
+.icon-ico-personales:before {
+  content: "\e926";
+}
+.icon-ico-plus:before {
+  content: "\e927";
+}
+.icon-ico-regresar:before {
+  content: "\e928";
+}
+.icon-ico-reiniciar:before {
+  content: "\e929";
+}
+.icon-ico-reportes-bold:before {
+  content: "\e92a";
+}
+.icon-ico-reportes:before {
+  content: "\e92b";
+}
+.icon-ico-ruta-bold:before {
+  content: "\e92c";
+}
+.icon-ico-ruta:before {
+  content: "\e92d";
+}
+.icon-ico-salir-bold:before {
+  content: "\e92e";
+}
+.icon-ico-salir:before {
+  content: "\e92f";
+}
+.icon-ico-soporte-bold:before {
+  content: "\e930";
+}
+.icon-ico-soporte:before {
+  content: "\e931";
+}
+.icon-ico-staff-bold:before {
+  content: "\e932";
+}
+.icon-ico-staff:before {
+  content: "\e933";
+}
+.icon-ico-textra-bold:before {
+  content: "\e934";
+}
+.icon-ico-textra:before {
+  content: "\e935";
+}
+.icon-ico-timeweb:before {
+  content: "\e936";
+}
+.icon-ico-usuario:before {
+  content: "\e937";
+}
+.icon-ico-vacaciones-bold:before {
+  content: "\e938";
+}
+.icon-ico-vacaciones:before {
+  content: "\e939";
+}
+.icon-ico-x:before {
+  content: "\e93a";
+}
