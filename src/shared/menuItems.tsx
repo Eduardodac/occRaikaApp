@@ -1,4 +1,3 @@
-import user from "../assets/user.png"
 import {MenuItem} from "./MenuItem";
 import { MenuItemIcon } from "./MenuItemIcon"
 import "../assets/iconos/style.css"

@@ -1,11 +1,9 @@
 import { SlideMenu } from 'primereact/slidemenu';
 import { menuItems } from './menuItems';
-import { useContext } from 'react';
 import { leftBarStore } from '../store/leftBarStatus';
 
 
 export const LeftMenu = () => {
-    const weigth = "250px"
 
     const { leftMenuItemsIcons, leftMenuItems } = menuItems();
 
