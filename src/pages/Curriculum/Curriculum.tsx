@@ -18,7 +18,7 @@ export function Curriculum() {
         switch (indexStepSelected) {
             case 1:
                 console.log(indexStepSelected)
-                navigate('perfil-interno');
+                navigate('perfil-externo');
                 break;
             case 2:
                 console.log(indexStepSelected)
@@ -49,7 +49,7 @@ export function Curriculum() {
 
             <div className="w-10/12 relative m-auto mb-10">
                 <div className="flex flex-row justify-around content-center">
-                    <StepIcon index={1} icon="1" title="Perfil Interno"></StepIcon>
+                    <StepIcon index={1} icon="1" title="Perfil Externo"></StepIcon>
                     <StepIcon index={2} icon="2" title="Form. Académica"></StepIcon>
 
                     <StepIcon index={3} icon="3" title="Form. Religiosa"></StepIcon>
