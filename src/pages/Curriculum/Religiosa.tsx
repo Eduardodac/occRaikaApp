@@ -1,3 +1,4 @@
+import { InputText } from 'primereact/inputtext';
 
 export const Religiosa = () => {
   return (
