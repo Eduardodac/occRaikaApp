@@ -63,7 +63,7 @@ export function Curriculum() {
                     </div>
                 </div>
             </div>
-            <div className=" w-full m-5 bg-fondo text-black">
+            <div className=" w-full px-5 bg-fondo text-black">
                 <Outlet></Outlet>
             </div>
         </div>
