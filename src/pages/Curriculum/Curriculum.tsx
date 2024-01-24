@@ -44,9 +44,7 @@ export function Curriculum() {
 
 
     return (
-        <div>
-
-
+        <div className=' py-5 mx-5 border border-slate-50 bg-white'>
             <div className="w-10/12 relative m-auto mb-10">
                 <div className="flex flex-row justify-around content-center">
                     <StepIcon index={1} icon="1" title="Perfil Externo"></StepIcon>
@@ -63,7 +61,7 @@ export function Curriculum() {
                     </div>
                 </div>
             </div>
-            <div className=" w-full px-5 bg-fondo text-black">
+            <div className=" w-4/5 m-auto px-5 text-black">
                 <Outlet></Outlet>
             </div>
         </div>

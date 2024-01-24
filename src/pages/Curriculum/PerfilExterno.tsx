@@ -22,7 +22,7 @@ export const PerfilExterno = () => {
 
     return (
         <>
-            <div className='m-5'>Por favor ingresa los siguientes datos, porfavor:</div>
+            <div className='m-5'>Por favor ingresa los siguientes datos:</div>
             <form className="flex flex-col w-3/4 m-auto space-y-2" onSubmit={formik.handleSubmit}>
                 <label htmlFor='SantoPatron' className='text-sm mb-2'>Mi Santo Patrón o Santa Patrona es:</label>
                 <InputText
@@ -72,10 +72,10 @@ export const PerfilExterno = () => {
                 <div>
                     {formik.touched['Decanato'] && <div>{formik.errors['Decanato']}</div>}
                 </div>
-                <label htmlFor='DesarrolloApostolado' className='text-sm mb-2'>Desarrollo mi postolado en:</label>
+                <label htmlFor='DesarrolloApostolado' className='text-sm mb-2'>Desarrollo mi apostolado en:</label>
                 <InputText
                     className='p-inputtext-sm'
-                    placeholder='Ingresa dirección de postolado.'
+                    placeholder='Ingresa dirección de apostolado.'
                     name='DesarrolloApostolado'
                     value={formik.values['DesarrolloApostolado']}
                     onChange={formik.handleChange}

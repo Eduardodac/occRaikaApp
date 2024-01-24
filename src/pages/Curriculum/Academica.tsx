@@ -24,8 +24,18 @@ export const Academica = () => {
         <>
             <div className='m-5'>Por favor rellena el formulario con tu información académica, porfavor:</div>
             <form className="flex flex-col">
-                <div className="flex flex-row justify-around items-center my-2 m-10">
-                    <span className='w-16'>Primaria:</span>
+                <div className="flex flex-row justify-around items-center my-2 m-5">
+                    <span className='w-24'>Primaria:</span>
+                    <InputText className='p-inputtext-sm' placeholder="Nombre" />
+                    <span>de</span>
+                    <InputText className='p-inputtext-sm' placeholder="Año inicio" />
+                    <span>al</span>
+                    <InputText className='p-inputtext-sm' placeholder="Año fin" />
+                    <span>en</span>
+                    <InputText className='p-inputtext-sm' placeholder="Estado" />
+                </div>
+                <div className="flex flex-row justify-around items-center my-2 m-5">
+                    <span className='w-24'>Secundaria:</span>
                     <InputText className='p-inputtext-sm' placeholder="Primaria" />
                     <span>de</span>
                     <InputText className='p-inputtext-sm' placeholder="Año inicio" />
@@ -34,8 +44,8 @@ export const Academica = () => {
                     <span>en</span>
                     <InputText className='p-inputtext-sm' placeholder="Estado" />
                 </div>
-                <div className="flex flex-row justify-around items-center my-2 m-10">
-                    <span className='w-16'>Secundaria:</span>
+                <div className="flex flex-row justify-around items-center my-2 m-5">
+                    <span className='w-24'>Preparatoria:</span>
                     <InputText className='p-inputtext-sm' placeholder="Primaria" />
                     <span>de</span>
                     <InputText className='p-inputtext-sm' placeholder="Año inicio" />
@@ -44,8 +54,8 @@ export const Academica = () => {
                     <span>en</span>
                     <InputText className='p-inputtext-sm' placeholder="Estado" />
                 </div>
-                <div className="flex flex-row justify-around items-center my-2 m-10">
-                    <span className='w-16'>Preparatoria:</span>
+                <div className="flex flex-row justify-around items-center my-2 m-5">
+                    <span className='w-24'>Escuela Técnica:</span>
                     <InputText className='p-inputtext-sm' placeholder="Primaria" />
                     <span>de</span>
                     <InputText className='p-inputtext-sm' placeholder="Año inicio" />
@@ -54,18 +64,8 @@ export const Academica = () => {
                     <span>en</span>
                     <InputText className='p-inputtext-sm' placeholder="Estado" />
                 </div>
-                <div className="flex flex-row justify-around items-center my-2 m-10">
-                    <span className='w-16'>Escuela Técnica:</span>
-                    <InputText className='p-inputtext-sm' placeholder="Primaria" />
-                    <span>de</span>
-                    <InputText className='p-inputtext-sm' placeholder="Año inicio" />
-                    <span>al</span>
-                    <InputText className='p-inputtext-sm' placeholder="Año fin" />
-                    <span>en</span>
-                    <InputText className='p-inputtext-sm' placeholder="Estado" />
-                </div>
-                <div className="flex flex-row justify-around items-center my-2 m-10">
-                    <span className='w-16'>Universidad:</span>
+                <div className="flex flex-row justify-around items-center my-2">
+                    <span className='w-24'>Universidad:</span>
                     <InputText className='p-inputtext-sm' placeholder="Primaria" />
                     <span>de</span>
                     <InputText className='p-inputtext-sm' placeholder="Año inicio" />
