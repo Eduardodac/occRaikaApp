@@ -1,7 +1,9 @@
 import { InputText } from 'primereact/inputtext';
 import { useFormik } from 'formik';
+import { perfilExternoFormType } from '../../components/curriculum/types';
+import { PerfilExternoValidation } from '../../components/curriculum/validations/perfilExternoValidation';
 
-const initialValues = {
+const initialValues:perfilExternoFormType = {
     Foto: '',
     SantoPatron: '',
     ZonaPerteneciente: '',
@@ -16,8 +18,9 @@ export const PerfilExterno = () => {
     const formik = useFormik({
         initialValues: initialValues,
         onSubmit: (values) => {
-            console.log(values)
-        }
+            alert(JSON.stringify(values, null, 2));
+        },
+        validate: PerfilExternoValidation
     });
 
     return (
@@ -33,7 +36,7 @@ export const PerfilExterno = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                 />
-                <div>
+                <div className='text-sm text-red-500'>
                     {formik.touched['SantoPatron'] && <div>{formik.errors['SantoPatron']}</div>}
                 </div>
                 <label htmlFor='ZonaPerteneciente' className='text-sm mb-2'>Pertenezco a la zona:</label>
@@ -45,7 +48,7 @@ export const PerfilExterno = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                 />
-                <div>
+                <div className='text-sm text-red-500'>
                     {formik.touched['SantoPatron'] && <div>{formik.errors['SantoPatron']}</div>}
                 </div>
                 <label htmlFor='SantoPatParroquiaron' className='text-sm mb-2'>Mi parroquia es:</label>
@@ -57,7 +60,7 @@ export const PerfilExterno = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                 />
-                <div>
+                <div className='text-sm text-red-500'>
                     {formik.touched['Parroquia'] && <div>{formik.errors['Parroquia']}</div>}
                 </div>
                 <label htmlFor='Decanato' className='text-sm mb-2'>Mi Decanato es:</label>
@@ -69,7 +72,7 @@ export const PerfilExterno = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                 />
-                <div>
+                <div className='text-sm text-red-500'>
                     {formik.touched['Decanato'] && <div>{formik.errors['Decanato']}</div>}
                 </div>
                 <label htmlFor='DesarrolloApostolado' className='text-sm mb-2'>Desarrollo mi apostolado en:</label>
@@ -81,7 +84,7 @@ export const PerfilExterno = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                 />
-                <div>
+                <div className='text-sm text-red-500'>
                     {formik.touched['DesarrolloApostolado'] && <div>{formik.errors['DesarrolloApostolado']}</div>}
                 </div>
                 <label htmlFor='DireccionCapilla' className='text-sm mb-2'>Dirección de la capilla:</label>
@@ -93,7 +96,7 @@ export const PerfilExterno = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                 />
-                <div>
+                <div className='text-sm text-red-500'>
                     {formik.touched['DireccionCapilla'] && <div>{formik.errors['DireccionCapilla']}</div>}
                 </div>
 
