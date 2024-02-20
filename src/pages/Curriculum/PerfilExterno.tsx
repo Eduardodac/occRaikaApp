@@ -49,7 +49,7 @@ export const PerfilExterno = () => {
                     onBlur={formik.handleBlur}
                 />
                 <div className='text-sm text-red-500'>
-                    {formik.touched['SantoPatron'] && <div>{formik.errors['SantoPatron']}</div>}
+                    {formik.touched['ZonaPerteneciente'] && <div>{formik.errors['ZonaPerteneciente']}</div>}
                 </div>
                 <label htmlFor='SantoPatParroquiaron' className='text-sm mb-2'>Mi parroquia es:</label>
                 <InputText
