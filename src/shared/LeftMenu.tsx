@@ -10,7 +10,7 @@ export const LeftMenu = () => {
     const leftBarStatus = leftBarStore((state) => state.status)
     const setLeftBarStatus = leftBarStore((state) => state.changeStatus)
 
-    const toolBarSetLocalStorage = (e: any) => {
+    const toolBarSetLocalStorage = () => {
         setLeftBarStatus(!leftBarStatus);
         leftBarStatus ? localStorage.setItem("topBarStatus", "true") : localStorage.setItem("topBarStatus", "false");
     }
