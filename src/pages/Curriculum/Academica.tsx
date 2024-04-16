@@ -53,7 +53,7 @@ export const Academica = () => {
 
     return (
         <>
-            <div className='m-5'>Por favor rellena el formulario con tu información académica, porfavor:</div>
+            <div className='m-5'>Por favor rellena el formulario con tu información académica:</div>
             <form className="flex flex-col">
                 <div className="flex flex-row justify-around items-center my-2 m-5">
                     <span className='w-24'>Primaria:</span>
