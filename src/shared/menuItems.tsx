@@ -11,6 +11,11 @@ export const menuItems = () => {
             )
         },
         {
+            template : () => (
+                <MenuItem label = 'Perfil Interno' icon = "icon-ico-basicos" path = "PerfilInterno"/>
+            )
+        },
+        {
             separator: true
         }
         ,
@@ -25,6 +30,11 @@ export const menuItems = () => {
         {
             template : () => (
                 <MenuItemIcon icon = "icon-ico-reportes" path = "Curriculum"/>
+            )
+        },
+        {
+            template : () => (
+                <MenuItemIcon icon = "icon-ico-basicos" path = "PerfilInterno"/>
             )
         },
         {

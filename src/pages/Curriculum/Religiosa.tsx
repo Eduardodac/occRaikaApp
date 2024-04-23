@@ -17,6 +17,7 @@ const initialValues = {
 
 export const Religiosa = () => {
 
+    const [opcion, setOpcion] = useState("");
     const [lectura, setLectura] = useState("");
     const [curso1, setCurso1] = useState("");
     const [curso2, setCurso2] = useState("");
@@ -170,8 +171,8 @@ export const Religiosa = () => {
                 <div className="flex flex-row w-5/5 items-center mb-2">
                     <label className="pr-2 w-3/5"> ¿Has leido la sagrada escritura en su totalidad?: </label>
                     <Dropdown
-                        value={lectura}
-                        onChange={(e) => setLectura(e.value)}
+                        value={opcion}
+                        onChange={(e) => setOpcion(e.value)}
                         options={opciones}
                         optionLabel="name"
                         placeholder="Selecciona una opción"

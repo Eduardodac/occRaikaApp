@@ -12,7 +12,7 @@ export const MenuItemIcon = ({
     img,
 }: ItemProps) => {
     return (
-        <div className='flex mx-4 my-2 '>
+        <div className='flex mx-4 my-2 h-12'>
             {
                 icon != 'icon-ico-salir'
                     ? (<NavLink
@@ -26,9 +26,11 @@ export const MenuItemIcon = ({
                             : (<i className={`${icon} py-3 pl-4 text-base`}></i>)}
 
                     </NavLink>)
-                    : (<button className=''>{img != null
-                        ? (<div className='py-3 pl-3'><img src={img} alt={path} className="h-5 w-5 opacity-60" /></div>)
-                        : (<i className={`${icon} py-3 pl-4 text-base`}></i>)}</button>)
+                    : (<button className=''>
+                        {img != null
+                            ? (<div className='py-3 pl-3'><img src={img} alt={path} className="h-5 w-5 opacity-60" /></div>)
+                            : (<i className={`${icon} py-3 pl-4 text-base`}></i>)}
+                    </button>)
             }
 
         </div>
