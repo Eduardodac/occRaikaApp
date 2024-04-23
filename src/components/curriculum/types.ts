@@ -46,3 +46,20 @@ export type academicaFormType = {
     Postgrados: string,
     OtrosEstudios: string
 }
+
+export type perfilInternoFormType = {
+    NombreCompleto: string,
+    Colonia: string,
+    CodigoPostal: string,
+    Municipio: string,
+    TelefonoFijo?: string,
+    Celular: string,
+    email: string,
+    CondicionVida: string,
+    Sexo: string,
+    FechaNacimiento: Date,
+    EstadoCivil: EstadoCivil,
+    Nacionalidad: string
+}
+
+export type EstadoCivil = "soltero" | "casado" | "separado" | "viudo";

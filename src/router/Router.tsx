@@ -8,6 +8,7 @@ import { Religiosa } from "../pages/Curriculum/Religiosa"
 import { Espiritual } from "../pages/Curriculum/Espiritual"
 import { Filosofica } from "../pages/Curriculum/Filosofica"
 import { Intelectual } from "../pages/Curriculum/Intelectual"
+import { PerfilInterno } from "../pages/PerfilInterno"
 
 export const Router = () => {
     return (
@@ -15,7 +16,7 @@ export const Router = () => {
             <Routes>
                 <Route path="/" element={<AppNavigatorBar />}>
                     <Route path="home" element={<HomePage />} />
-                    <Route path="directorio" element={<Curriculum />} />
+                    <Route path="PerfilInterno" element={<PerfilInterno />} />
                     <Route path="curriculum" element={<Curriculum />}>
                         <Route path="perfil-externo" element={<PerfilExterno />}/>
                         <Route path="form-academica" element={<Academica />}/>

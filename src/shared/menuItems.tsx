@@ -7,12 +7,12 @@ export const menuItems = () => {
     const leftMenuItems = [
         {
             template : () => (
-                <MenuItem label = 'Curriculum' icon = "icon-ico-reportes" path = "Curriculum"/>
+                <MenuItem label = 'Perfil Interno' icon = "icon-ico-basicos" path = "PerfilInterno"/>
             )
         },
         {
             template : () => (
-                <MenuItem label = 'Perfil Interno' icon = "icon-ico-basicos" path = "PerfilInterno"/>
+                <MenuItem label = 'Curriculum' icon = "icon-ico-reportes" path = "Curriculum"/>
             )
         },
         {
@@ -29,14 +29,15 @@ export const menuItems = () => {
     const leftMenuItemsIcons = [
         {
             template : () => (
-                <MenuItemIcon icon = "icon-ico-reportes" path = "Curriculum"/>
+                <MenuItemIcon icon = "icon-ico-basicos" path = "PerfilInterno"/>
             )
         },
         {
             template : () => (
-                <MenuItemIcon icon = "icon-ico-basicos" path = "PerfilInterno"/>
+                <MenuItemIcon icon = "icon-ico-reportes" path = "Curriculum"/>
             )
         },
+        
         {
             separator: true
         }
