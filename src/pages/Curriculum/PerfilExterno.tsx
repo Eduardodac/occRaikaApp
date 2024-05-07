@@ -25,7 +25,6 @@ export const PerfilExterno = () => {
 
     return (
         <>
-            <div className='m-5'>Por favor ingresa los siguientes datos:</div>
             <form className="flex flex-col w-3/4 m-auto space-y-2" onSubmit={formik.handleSubmit}>
                 <label htmlFor='SantoPatron' className='text-sm mb-2'>Mi Santo Patrón o Santa Patrona es:</label>
                 <InputText

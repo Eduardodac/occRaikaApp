@@ -58,7 +58,7 @@ export type perfilInternoFormType = {
     CondicionVida: string,
     Sexo: string,
     FechaNacimiento: Date,
-    EstadoCivil: EstadoCivil,
+    EstadoCivil: string,
     Nacionalidad: string
 }
 
