@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { useAuthStore } from '../store/authStore';
 
 interface ItemProps {
     icon?: string,
@@ -11,11 +12,17 @@ export const MenuItemIcon = ({
     path = '',
     img,
 }: ItemProps) => {
+    const {setJWT} = useAuthStore();
+
+    const cerrarSesion = ()=>{
+        setJWT(null);
+    }
     return (
         <div className='flex mx-4 my-2 h-12'>
             {
                 icon != 'icon-ico-salir'
                     ? (<NavLink
+                        onClick={()=>cerrarSesion()}
                         className={({ isActive }) => {
                             return `w-12 ${isActive ? 'active' : ''} `
                         }}

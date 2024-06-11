@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { useAuthStore } from '../store/authStore';
 
 interface ItemProps {
     icon: string,
@@ -13,6 +14,11 @@ export const MenuItem = ({
     path = '',
     img,
 }: ItemProps) => {
+    const {setJWT} = useAuthStore();
+
+    const cerrarSesion = ()=>{
+        setJWT(null);
+    }
 
     return (
         
@@ -20,6 +26,7 @@ export const MenuItem = ({
             {
                 label != 'Cerrar Sesión'
                     ? (<NavLink
+                        onClick={()=>cerrarSesion()}
                         className={({ isActive }) => {
                             return `w-full  rounded-lg ${isActive ? 'active' : 'hover:bg-grayl'} `
                         }}

@@ -1,0 +1,388 @@
+---
+openapi: 3.0.1
+info:
+  title: WebAPIAutores
+  version: v1
+paths:
+  "/api/v1/Coordenadas":
+    get:
+      tags:
+      - Coordenadas
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/CoordenadasDTO"
+            application/json:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/CoordenadasDTO"
+            text/json:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/CoordenadasDTO"
+    post:
+      tags:
+      - Coordenadas
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/CoordenadasDTO"
+          text/json:
+            schema:
+              "$ref": "#/components/schemas/CoordenadasDTO"
+          application/*+json:
+            schema:
+              "$ref": "#/components/schemas/CoordenadasDTO"
+      responses:
+        '200':
+          description: Success
+  "/api/PerfilExternoLaico":
+    get:
+      tags:
+      - PerfilExternoLaico
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+            application/json:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+            text/json:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+    post:
+      tags:
+      - PerfilExternoLaico
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+          text/json:
+            schema:
+              "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+          application/*+json:
+            schema:
+              "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+      responses:
+        '200':
+          description: Success
+  "/api/PerfilExternoLaico/{id}":
+    get:
+      tags:
+      - PerfilExternoLaico
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+            text/json:
+              schema:
+                "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+    put:
+      tags:
+      - PerfilExternoLaico
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+          text/json:
+            schema:
+              "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+          application/*+json:
+            schema:
+              "$ref": "#/components/schemas/PerfilExternoLaicoDTO"
+      responses:
+        '200':
+          description: Success
+    delete:
+      tags:
+      - PerfilExternoLaico
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      responses:
+        '200':
+          description: Success
+  "/api/v1/User/registrar":
+    post:
+      tags:
+      - User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/CrearUsuario"
+          text/json:
+            schema:
+              "$ref": "#/components/schemas/CrearUsuario"
+          application/*+json:
+            schema:
+              "$ref": "#/components/schemas/CrearUsuario"
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                "$ref": "#/components/schemas/RespuestaAutenticacion"
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/RespuestaAutenticacion"
+            text/json:
+              schema:
+                "$ref": "#/components/schemas/RespuestaAutenticacion"
+  "/api/v1/User/login":
+    post:
+      tags:
+      - User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/CredencialesUsuario"
+          text/json:
+            schema:
+              "$ref": "#/components/schemas/CredencialesUsuario"
+          application/*+json:
+            schema:
+              "$ref": "#/components/schemas/CredencialesUsuario"
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                "$ref": "#/components/schemas/RespuestaAutenticacion"
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/RespuestaAutenticacion"
+            text/json:
+              schema:
+                "$ref": "#/components/schemas/RespuestaAutenticacion"
+  "/api/v1/User/usuario":
+    get:
+      tags:
+      - User
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                "$ref": "#/components/schemas/UserGetDTO"
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/UserGetDTO"
+            text/json:
+              schema:
+                "$ref": "#/components/schemas/UserGetDTO"
+  "/api/v1/User":
+    get:
+      tags:
+      - User
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/UserGetDTO"
+            application/json:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/UserGetDTO"
+            text/json:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/UserGetDTO"
+components:
+  schemas:
+    CoordenadasDTO:
+      type: object
+      properties:
+        coordenadasId:
+          type: string
+          format: uuid
+        latitud:
+          type: string
+          nullable: true
+        longitud:
+          type: string
+          nullable: true
+        descripcion:
+          type: string
+          nullable: true
+      additionalProperties: false
+    CrearUsuario:
+      required:
+      - email
+      - password
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+        nombre:
+          type: string
+          nullable: true
+        apellidoPaterno:
+          type: string
+          nullable: true
+        apellidoMaterno:
+          type: string
+          nullable: true
+      additionalProperties: false
+    CredencialesUsuario:
+      required:
+      - email
+      - password
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+      additionalProperties: false
+    PerfilExternoLaicoDTO:
+      type: object
+      properties:
+        perfilExternoLaicoId:
+          type: string
+          format: uuid
+        foto:
+          type: string
+          nullable: true
+        santoPatron:
+          type: string
+          nullable: true
+        zonaPerteneciente:
+          type: string
+          nullable: true
+        parroquia:
+          type: string
+          nullable: true
+        decanato:
+          type: string
+          nullable: true
+        desarrolloApostolado:
+          type: string
+          nullable: true
+        direccionCapilla:
+          type: string
+          nullable: true
+      additionalProperties: false
+    RespuestaAutenticacion:
+      type: object
+      properties:
+        token:
+          type: string
+          nullable: true
+        expiracion:
+          type: string
+          format: date-time
+      additionalProperties: false
+    UserGetDTO:
+      type: object
+      properties:
+        nombre:
+          type: string
+          nullable: true
+        apellidoPaterno:
+          type: string
+          nullable: true
+        apellidoMaterno:
+          type: string
+          nullable: true
+        calle:
+          type: string
+          nullable: true
+        colonia:
+          type: string
+          nullable: true
+        codigoPostal:
+          type: string
+          nullable: true
+        municipio:
+          type: string
+          nullable: true
+        entidadFederativa:
+          type: string
+          nullable: true
+        telefonoFijo:
+          type: string
+          nullable: true
+        celular:
+          type: string
+          nullable: true
+        condicionVida:
+          type: string
+          nullable: true
+        sexo:
+          type: string
+          nullable: true
+        fechaNacimiento:
+          type: string
+          nullable: true
+        estadoCivil:
+          type: string
+          nullable: true
+        nacionalidad:
+          type: string
+          nullable: true
+      additionalProperties: false
+  securitySchemes:
+    Bearer:
+      type: apiKey
+      name: Authorization
+      in: header
+security:
+- Bearer: []

@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.6.0",
+    "@openapitools/openapi-generator-cli": "^2.13.4",
     "@types/uuid": "^9.0.2",
+    "axios": "^1.7.2",
     "formik": "^2.4.5",
     "primeicons": "^6.0.1",
     "primereact": "^9.5.0",
@@ -19,7 +22,8 @@
     "react-hook-form": "^7.51.5",
     "react-router-dom": "^6.14.0",
     "uuid": "^9.0.0",
-    "zustand": "^4.4.6"
+    "yup": "^1.4.0",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
