@@ -9,7 +9,7 @@ const createApiConfig =((token:string | null)=>{
         },
     };
     //openApiConfig.basePath = "http://localhost:7090"
-    openApiConfig.basePath = "https://localhost:7289"
+    openApiConfig.basePath = "https://occraika.azurewebsites.net"
     return openApiConfig
 })
 

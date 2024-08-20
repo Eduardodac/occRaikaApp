@@ -21,7 +21,7 @@ export const AppNavigatorBar = () => {
             <div className="flex flex-col w-full">
                 <TopMenu></TopMenu>
                 <div className=" w-full pt-5 text-black overflow-auto">
-                    {jwt == null ? <Navigate to="/usuario"  />
+                    {jwt == null ? <Navigate to="/usuario" />
                         : <Outlet></Outlet>}
                 </div>
             </div>

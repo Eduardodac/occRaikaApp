@@ -1,6 +1,8 @@
 import {MenuItem} from "./MenuItem";
 import { MenuItemIcon } from "./MenuItemIcon"
 import "../assets/iconos/style.css"
+import { MenuItemCerrarSesion } from "./MenuItemCerrarSesion";
+import { MenuItemIconCerrarSesion } from "./MenuItemIconCerrarSesion";
 
 export const menuItems = () => {
 
@@ -21,7 +23,7 @@ export const menuItems = () => {
         ,
         {
             template : () => (
-                <MenuItem label = 'Cerrar Sesión' icon = "icon-ico-salir" path = ""/>
+                <MenuItemCerrarSesion label = 'Cerrar Sesión' icon = "icon-ico-salir" path = ""/>
             )
         },
     ];
@@ -44,7 +46,7 @@ export const menuItems = () => {
         ,
         {
             template : () => (
-                <MenuItemIcon icon = "icon-ico-salir" path = ""/>
+                <MenuItemIconCerrarSesion icon = "icon-ico-salir" path = ""/>
             )
         },
     ];
